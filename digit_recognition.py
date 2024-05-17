@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf  # Import TensorFlow at the beginning
 
 # Load your saved model (replace with your model's path)
-model = tf.keras.models.load_model('/content/drive/MyDrive/Colab Notebooks/project deployment/model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 def predict_digit(image):
   # Preprocess the image (resize, normalize, etc.) based on your model's requirements
