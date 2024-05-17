@@ -10,9 +10,7 @@ Original file is located at
 from google.colab import drive
 drive.mount('/content/drive')
 
-pip install streamlit opencv-python
 
-pip install tensorflow
 
 import streamlit as st
 import cv2
@@ -20,7 +18,7 @@ import numpy as np
 import tensorflow as tf  # Import TensorFlow at the beginning
 
 # Load your saved model (replace with your model's path)
-model = tf.keras.models.load_model('/content/drive/MyDrive/Colab Notebooks/project deployment/model.h5')
+model = tf.keras.models.load_model('model.h5')
 
 def predict_digit(image):
   # Preprocess the image (resize, normalize, etc.) based on your model's requirements
